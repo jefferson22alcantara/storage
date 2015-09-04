@@ -16,7 +16,7 @@ for  i in `cat lista_users.txt`
  user=`radosgw-admin user info --uid="${i}"`
  userid=`echo ${user} | grep user_id | sed "s/{//g;s/,//g;s/\"//g" | awk '{ print $2 }'`
  displayname=`echo ${user} | grep display_name | sed "s/{//g;s/,//g;s/\"//g" | awk '{ print $2 }'`
- email="${userid}@walmart.com"
+ email="${userid}@business.com"
  #echo "userid=$userid"
  #echo "display=$displayname"
  #echo "email=${email}"
@@ -27,7 +27,7 @@ for  i in `cat lista_users.txt`
  subusers=`radosgw-admin user info --uid="${userid}" | grep -i "\{ \"id" | sed 's/{//g;s/,//g;s/\"//g' | awk '{ print $2 }' `
  	for sub in `echo $subusers`
 	 {
-		permission=`radosgw-admin user info --uid="jmoura" | egrep -A 1 "\{ \"id\"\: \"jmoura:teste\"" | grep permissions| sed 's,\",,g;s,\,,,g;s,},,g' | awk '{ print $2 }' | awk -F "-" '{ print $1 }'`
+		permission=`radosgw-admin user info --uid="${userid}" | egrep -A 1 "\{ \"id\"\: \"jmoura:teste\"" | grep permissions| sed 's,\",,g;s,\,,,g;s,},,g' | awk '{ print $2 }' | awk -F "-" '{ print $1 }'`
 		#echo "--------------------------\n"
 		#echo "subuser=$sub" >>${USER_INFO}
 		#echo "permssion=$permission">>${USER_INFO}
