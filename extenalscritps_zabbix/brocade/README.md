@@ -93,4 +93,4 @@ Copyright
 
     Copyright (c) Jefferson Alcantara Moura
 Authors
-    Jefferson Alcantara Jmoura ( jefferson22alcantara@gmail.com)
+    Jefferson Alcantara moura ( jefferson22alcantara@gmail.com)
