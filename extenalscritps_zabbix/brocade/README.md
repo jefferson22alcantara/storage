@@ -40,7 +40,9 @@ Graphs
 
 Installation
 
-Inside Zabbix Web > Adminitration >General >Selec Value mapping and Create the Follow Itens below : 
+    Inside Zabbix Web > Adminitration >General >Select Value mapping, 
+    and Create the Follow Itens below : 
+
     Add a value mapping named swFcPortStatus with the following values:
         0 => unknown
         1 => online
@@ -82,12 +84,13 @@ Inside Zabbix Web > Adminitration >General >Selec Value mapping and Create the F
 
 
 
-    License
 
-This template is distributed under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+License
+
+    This template is distributed under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+
 Copyright
 
-Copyright (c) Jefferson Alcantara Moura
+    Copyright (c) Jefferson Alcantara Moura
 Authors
-
-Jefferson Alcantara Jmoura ( jefferson22alcantara@gmail.com)
+    Jefferson Alcantara Jmoura ( jefferson22alcantara@gmail.com)
