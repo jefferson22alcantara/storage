@@ -83,7 +83,8 @@ Installation
     Associate ZBX-BROCADE-FC-PORT template to the host.
 
 
-
+Brocade Mib reference: 
+	https://community.brocade.com/dtscp75322/attachments/dtscp75322/fibre/8685/1/53_1000602_02_MIB_v610.pdf
 
 License
 
