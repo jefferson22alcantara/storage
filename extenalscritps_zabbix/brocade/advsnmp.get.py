@@ -3,7 +3,7 @@ import os
 import sys
 
 def main(argv1, argv2, argv3):
-	oid = os.popen("/usr/bin/snmpwalk -u admin -v 3 -n VF:%s %s %s" % (argv1, argv2, argv3) ).read()
+	oid = os.popen("/usr/bin/snmpwalk -u admin -v 3 -n VF:%s %s:161 %s 2>/dev/null" % (argv1, argv2, argv3) ).read()
 	#SNMP_INDEX = oid.split("=")[0].split(".")[-1]
 	SNMP_VALUE = oid.split("=")[1].split(".")[0].split(":")[1].replace(" ", "")
 	SNMP_TYPE = oid.split("=")[1].split(".")[0].split(":")[0].replace(" ", "")

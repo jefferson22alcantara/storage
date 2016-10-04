@@ -3,7 +3,7 @@ import os
 import sys
 
 def main(argv1, argv2):
-	oid = os.popen("/usr/bin/snmpwalk -u admin -v 3 -n VF:%s %s IF-MIB::ifDescr"% (argv1, argv2)).read()
+	oid = os.popen("/usr/bin/snmpwalk -u admin -v 3 -n VF:%s %s:161 IF-MIB::ifDescr 2>/dev/null"% (argv1, argv2)).read()
 	oid_list = [line for line in oid.split('\n') if line.strip() != '']
 	print(" { \"data\":[")
 	last_line = oid_list[-1]
